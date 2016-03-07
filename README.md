@@ -3,7 +3,10 @@ First cut at a Docker file to run the Logscape ( http://www.logscape.com/ /  htt
 
 Pre-requisites
 * docker/docker toolbox installed
-* Logscape download is in current directory - Logscape-3.10_b0115.zip
+* Logscape download is in current directory - Logscape-3.11_b0121.zip
+
+Download this from: 
+http://logscape.com/get.html
 
 Use it
 * docker build -t logscape . # build the image
