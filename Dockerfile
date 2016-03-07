@@ -2,12 +2,12 @@ FROM java:8-jre
 
 RUN apt-get update && apt-get install -y zip
 
-COPY Logscape-3.10_b0115.zip /tmp
+COPY Logscape-3.11_b0121.zip /tmp
 
 RUN mkdir -p /app
 WORKDIR /app
 
-RUN unzip /tmp/Logscape-3.10_b0115.zip
+RUN unzip /tmp/Logscape-3.11_b0121.zip
 
 WORKDIR /app/logscape
 
