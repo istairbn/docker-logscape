@@ -12,7 +12,7 @@ RUN unzip /tmp/Logscape-3.11_b0121.zip
 WORKDIR /app/logscape
 
 EXPOSE 8080
-
+EXPOSE 11000-11100
 RUN sed 's/&//' boot.sh >boot-fg.sh && chmod +x boot-fg.sh
 
 #ENTRYPOINT MANAGEMENT_HOST=localhost && \
@@ -21,4 +21,4 @@ RUN sed 's/&//' boot.sh >boot-fg.sh && chmod +x boot-fg.sh
 # ./boot.sh $MANAGER
 
 #ENTRYPOINT ./boot.sh stcp://localhost:11000
-ENTRYPOINT exec ./boot-fg.sh stcp://localhost:11000
+#ENTRYPOINT exec ./boot-fg.sh stcp://localhost:11000
